@@ -1,0 +1,129 @@
+/* 1024px ve daha küçük ekranlar (tablet ve altı) */
+@media (max-width: 1024px) {
+    /* Header */
+    header {
+      padding: 20px 8%; /* Padding daraltıldı */
+      flex-direction: column;
+      text-align: center;
+    }
+    .navlist {
+      flex-direction: column; /* Menü seçeneklerini dikey hizala */
+      margin-top: 10px;
+    }
+    .navlist a {
+      margin: 10px 0; /* Menü linkleri arasına boşluk ekle */
+    }
+    .home {
+      grid-template-columns: 1fr; /* Ana sayfa içeriği tek sütun */
+      padding: 50px 10%;
+    }
+    .home-text h1 {
+      font-size: 2.5rem; /* Başlık boyutu küçültüldü */
+    }
+    .home button {
+      font-size: 20px; /* Buton yazı boyutu küçültüldü */
+    }
+  
+    /* Ürün Kartları */
+    .product-cards {
+      flex-direction: column; /* Kartları dikey hizala */
+      align-items: center;
+    }
+    .card {
+      width: 90%; /* Kart genişliği daraltıldı */
+    }
+    .card img {
+      height: 150px; /* Resim yüksekliği küçültüldü */
+    }
+  }
+  
+  /* 768px ve daha küçük ekranlar (telefonlar ve küçük tabletler) */
+  @media (max-width: 768px) {
+    /* Genel düzenlemeler */
+    section {
+      padding: 40px 5%; /* Daha dar ekranlarda padding azaltıldı */
+    }
+  
+    /* Header ve Menü */
+    .navlist {
+      display: none; /* Menü küçük ekranlarda gizlensin, hamburger menü gibi bir çözüm eklenebilir */
+    }
+    #menu-icon {
+      display: block; /* Küçük ekranlarda menü ikonunu göster */
+    }
+  
+    /* Home Bölümü */
+    .home-text h1 {
+      font-size: 2rem; /* Başlık boyutu küçültüldü */
+    }
+    .home button {
+      font-size: 18px;
+    }
+  
+    /* About ve Contact Bölümleri */
+    .about-content, .contact-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 5%; /* Ekstra padding kaldırıldı */
+    }
+    .about-img img, .contact-form {
+      margin: 0;
+      max-width: 100%; /* Görsel genişliği ekranı doldursun */
+    }
+    .contact-info, .about-text {
+      margin: 0 0 20px;
+    }
+  }
+  
+  /* 480px ve daha küçük ekranlar (mobil cihazlar) */
+  @media (max-width: 480px) {
+    /* Header */
+    header {
+      padding: 15px 5%;
+    }
+    .nav-icons {
+      padding: 5px 10px;
+    }
+  
+    /* Ana içerik */
+    .home-text h1 {
+      font-size: 1.8rem;
+    }
+    .home button {
+      font-size: 16px;
+    }
+    .home span {
+      font-size: 1.2rem;
+    }
+  
+    /* Ürün Kartları */
+    .card {
+      width: 100%; /* Kart genişliği tam ekran */
+      margin-bottom: 15px; /* Kartlar arasında boşluk */
+    }
+    .card img {
+      height: 120px; /* Resim yüksekliği daha da küçültüldü */
+    }
+    .card h2 {
+      font-size: 1.2rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
+  
+    /* Footer */
+    .footer {
+      padding: 30px 5%;
+      text-align: center;
+    }
+    .footer-content {
+      flex-direction: column;
+    }
+    .footer-section h2 {
+      font-size: 1.3rem;
+    }
+    .social-buttons {
+      gap: 10px;
+    }
+  }
+  

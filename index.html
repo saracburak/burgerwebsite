@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <!--icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--text style-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <title>Restaurant Website</title>
+
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo" id="home"><i class='bx bxs-home'></i>Burger Home</a>
+    <ul class="navlist">
+      <li><a href="#home" class="active">Anasayfa</a></li>
+      <li><a href="#menu">Menülerimiz</a></li>
+      <li><a href="#about">Hakkımızda</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </header>
+  
+    <!-- home -->
+  
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Yiyin, <span> Eğlenin & </span><br> Gerçek Lezzetin Tadını <br> Çıkarın</h1>
+        <button onclick="window.location.href='#menu'">
+          <p>Menüleri Keşfet</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+            ></path>
+          </svg>
+        </button>
+      </div>
+  
+      <div class="home-img">
+        <img src="images/burger-kapak.webp" alt="">
+      </div>
+    </section>
+  
+    <!-- menu -->
+  
+    <section class="products-menu" id="menu">
+      <h1> Menülerimiz </h1>
+      
+      <div class="product-cards">
+        <div class="card">
+          <img src="images/products-menu-cheese.webp" alt="Burger 1">
+          <h2>Cheese Burger</h2>
+          <p>Lezzetli ve taze malzemelerle hazırlanmış cheese burger.</p>
+          <a href="product-details.html#cheese"><button>Detaylar</button></a>
+        </div>
+        
+        <div class="card">
+          <img src="images/products-menu-kofte.webp" alt="Burger 2">
+          <h2>Köfte Burger</h2>
+          <p>İki katlı, doyurucu ve nefis köfte burger.</p>
+          <a href="product-details.html#meatball"><button>Detaylar</button></a>
+        </div>
+        
+        <div class="card">
+          <img src="images/products-menu-chicken.webp" alt="Burger 3">
+          <h2>Tavuk Burger</h2>
+          <p>Tavuk etinin en lezzetli haliyle hazırlanmış burger.</p>
+          <a href="product-details.html#chicken"><button>Detaylar</button></a>
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- about -->
+
+  <section class="about" id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h1> Hakkımızda </h1>
+            <p>
+                Burger tutkumuzu en kaliteli malzemelerle harmanlayarak, lezzeti zirveye taşımak için buradayız! Restoranımızda her burger, özenle seçilmiş taze malzemeler ve ev yapımı soslarla hazırlanıyor. Müşterilerimizin memnuniyeti, bizim en büyük motivasyonumuz.
+                <br><br>
+                Doğal ve yerel ürünleri kullanarak, lezzetli olduğu kadar sağlıklı alternatifler de sunuyoruz. İster klasik burgerlerin tadını çıkarın, ister kendinize özel bir lezzet deneyimi yaratın, her ısırıkta bu tutkumuzu hissedeceksiniz.
+                <br><br>
+                Aile sıcaklığında, samimi bir ortamda eşsiz burgerlerimizi tatmanız için sabırsızlanıyoruz!
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="images/chef.webp" alt="Chef Image">
+        </div>
+    </div>
+</section>
+
+<!-- contact -->
+<section class="contact" id="contact">
+  <div class="contact-content">
+      <div class="contact-info">
+          <h1>İletişim</h1>
+          <p>Her türlü soru, öneri veya geri bildirim için bize ulaşabilirsiniz. Sizden haber almak bizi mutlu eder!</p>
+          <ul class="contact-details">
+              <li><i class='bx bx-map'></i>Adres: 123 Burger Sokağı, Burger</li>
+              <li><i class='bx bx-phone'></i>Telefon: +90 555 123 4567</li>
+              <li><i class='bx bx-envelope'></i>Email: info@burgerhome.com</li>
+          </ul>
+      </div>
+      <div class="contact-form">
+          <form action="#" method="post">
+              <div class="input-group">
+                  <input type="text" name="name" placeholder="Adınız" required>
+                  <input type="email" name="email" placeholder="Email Adresiniz" required>
+              </div>
+              <textarea name="message" rows="5" placeholder="Mesajınız" required></textarea>
+              <button type="submit">Gönder</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-section links">
+          <h2>Hızlı Linkler</h2>
+          <ul>
+              <li><a href="#home">Anasayfa</a></li>
+              <li><a href="#menu">Menülerimiz</a></li>
+              <li><a href="#about">Hakkımızda</a></li>
+              <li><a href="#contact">İletişim</a></li>
+          </ul>
+      </div>
+      <div class="footer-section contact-form">
+          <h2>Bize Ulaşın</h2>
+          <p>Her türlü soru ve önerileriniz için bizimle iletişime geçin.</p>
+          <ul>
+              <li><i class='bx bx-map'></i>Adres: 123 Burger Sokağı, Burger</li>
+              <li><i class='bx bx-phone'></i>Telefon: +90 555 123 4567</li>
+              <li><i class='bx bx-envelope'></i>Email: info@burgerhome.com</li>
+          </ul>
+      </div>
+      <div class="footer-section social-links">
+          <h2>Sosyal Linkler</h2>
+          <div class="social-buttons">
+              <!-- Instagram Button -->
+              <a href="#" class="social-btn instagram">
+                  <i class='bx bxl-instagram'></i>
+              </a>
+              <!-- Facebook Button -->
+              <a href="#" class="social-btn facebook">
+                  <i class='bx bxl-facebook'></i>
+              </a>
+              <!-- Twitter Button -->
+              <a href="#" class="social-btn twitter">
+                  <i class='bx bxl-twitter'></i>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2024 Burger Home. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+
+
+
+
+  
+<script src="script.js"></script>
+</body>
+</html>
